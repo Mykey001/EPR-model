@@ -1,0 +1,55 @@
+# Default configuration matching the EA's default parameters
+# All values here MUST match the MQL5 EA input defaults exactly
+
+pivot_points:
+  left_len_high: 10
+  right_len_high: 10
+  left_len_low: 10
+  right_len_low: 10
+
+ema:
+  fast_period: 5
+  slow_period: 15
+
+psar:
+  start: 0.02
+  increment: 0.02
+  maximum: 0.20
+
+rsi:
+  period: 7
+  overbought: 70
+  oversold: 30
+
+bollinger_bands:
+  period: 20
+  std_dev: 2.0
+
+adx:
+  period: 14
+  threshold: 30
+  enabled: true
+
+macro_filter:
+  timeframe: "H1"
+  ema_period: 200
+  enabled: true
+
+mean_reversion:
+  extreme_lookback: 5
+
+trade_management:
+  lot_size: 0.1
+  use_swing_sl: true
+  swing_sl_buffer_pips: 5.0
+  risk_reward_ratio: 2.0
+  fixed_sl_pips: 50.0
+  magic_number: 202406
+  slippage_points: 10
+
+# ML-specific settings
+ml:
+  train_test_split: 0.8
+  validation_split: 0.1
+  random_seed: 42
+  walk_forward_windows: 5
